@@ -6,31 +6,33 @@ Welcome to my **PLP Portfolio Website** — a personal and professional showcase
 
 ## 📁 Project Structure
 
-├── index.html
-├── css/
-│ ├── styles.css
-│ └── Images/
-│ ├── kite.png
-│ ├── hero.png
-│ ├── figma.png
-│ ├── illustrator.png
-│ ├── photoshop.png
-│ ├── wordpress.png
-│ ├── html.png
-│ ├── css.png
-│ ├── graphic 1.jpg
-│ ├── graphic 2.jpg
-│ ├── ui mobile.png
-│ ├── ui mobile 2.png
-│ ├── ui web.png
-│ ├── ui web 2.png
-│ ├── undraw_phone-call_ov3z.svg
-│ ├── msg.png
-│ ├── github.png
-│ ├── linkedin.png
-│ ├── twitter.png
-│ ├── facebook.png
-│ └── whatsapp.png
+.
+├── README.md
+├── css
+│   ├── Images
+│   │   ├── css.png
+│   │   ├── facebook.png
+│   │   ├── figma.png
+│   │   ├── github.png
+│   │   ├── graphic 1.jpg
+│   │   ├── graphic 2.jpg
+│   │   ├── hero.png
+│   │   ├── html.png
+│   │   ├── illustrator.png
+│   │   ├── kite.png
+│   │   ├── linkedin.png
+│   │   ├── msg.png
+│   │   ├── photoshop.png
+│   │   ├── twitter.png
+│   │   ├── ui mobile 2.png
+│   │   ├── ui mobile.png
+│   │   ├── ui web 2.png
+│   │   ├── ui web.png
+│   │   ├── undraw_phone-call_ov3z.svg
+│   │   ├── whatsapp.png
+│   │   └── wordpress.png
+│   └── styles.css
+└── index.html
 
 
 
