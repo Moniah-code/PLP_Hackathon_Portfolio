@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-between;
+    box-shadow: 0 4px 2px -2px rgba(4, 4, 4, 0.1);
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color: #20ECD3;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: end !important;
+
+    width: 50%;
+    margin-left: 10%;
+    padding: 10px;
+}
+
+.topnav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: black;
+    width: 100%;
+    text-decoration: none !important;
+}
+
+.topnav a.active {
+    color: rgb(250, 2, 2);
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #fbf9fd, #f3fdfe);
+
+    color: #414141;
+    font-size: 15px;
+    font-weight: semi-bold;
+}
+
+.about img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    size: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: #f9fbfe;
+}
+
+
+.left {
+    padding: 20px;
+    flex: 2;
+    width: 100%;
+}
+.right {
+    padding: 20px;
+    flex: 1;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    padding-bottom: 0.3rem;
+    margin-top: 2rem;
+}
+.skills-box {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.section-title.red {
+    width: 100%;
+    height: 2px;
+    background-color: #d32f2f;
+    margin: 1rem 0;
+}
+
+.section-title.red {
+    margin-bottom: 10px;
+    color: red;
+    border-color: red;
+}
+
+.section-title.blue {
+    color: #00bfff;
+    border-color: #00bfff;
+}
+
+.experience {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(2, auto);
+    ;
+}
+
+.work {
+    margin-bottom: 2rem;
+}
+
+.date {
+    font-weight: bold;
+    color: #555;
+}
+
+.job-role {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.job-subtitle {
+    font-style: italic;
+    margin-bottom: 0.2rem;
+}
+
+.job-details ul {
+    margin-top: 0;
+    padding-left: 1.2rem;
+}
+
+.education p {
+    margin: 0.8rem 0;
+}
+
+.software-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1rem 0;
+}
+
+.software-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.skills-list {
+    list-style: square;
+    padding-left: 1.2rem;
+}
+
+.date {
+    position: relative;
+}
+
+.date::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #ccc;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+}
+
+.date {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.date::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff4500;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: #d32f2f;
+    border-left: 4px solid #d32f2f;
+    padding-left: 0.5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.03);
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f4dcdc;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.illustration img {
+    max-width: 200px;
+    height: auto;
+}
+.portfolio-section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #d32f2f;
+  border-left: 4px solid #d32f2f;
+  padding-left: 0.5rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.03);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background: none;
+    border: 1px solid #d32f2f;
+    color: #d32f2f;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+.icon {
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fc0202;
+    height: 200px;
+
+}
+
+.footer-content .socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    gap: 40px;
+}
+
+.footer-content .socials img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-content h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: semi-bold;
+    text-align: center;
+    justify-self: center;
+}
+
+.footer-content p {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
