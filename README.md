@@ -3,6 +3,9 @@
 Welcome to my **PLP Portfolio Website** — a personal and professional showcase of my skills, projects, and experiences as a **UI/UX designer**, **software developer in training**, and **digital creative**.
 
 ---
+# Github Pages link
+- Click the link which is hosted on github pages
+[My portfolio link](https://github.com/Moniah-code/PLP_Hackathon_Portfolio.git)
 
 ---
 
