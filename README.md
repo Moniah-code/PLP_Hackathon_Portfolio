@@ -17,6 +17,29 @@ To preview the site locally:
 2. Open `index.html` in your preferred browser.
 3. Make sure the `css` folder is in the same root directory as `index.html`.
 
+<img width="1422" height="768" alt="Screenshot 2025-08-03 at 12 15 14" src="https://github.com/user-attachments/assets/9fc6afa8-3963-4439-ad17-4f6d23ec6f03" />
+
+<img width="1440" height="765" alt="Screenshot 2025-08-03 at 12 15 37" src="https://github.com/user-attachments/assets/4c8df90a-a791-43fd-ae16-4d62668b734b" />
+
+<img width="1439" height="769" alt="Screenshot 2025-08-03 at 12 15 27" src="https://github.com/user-attachments/assets/e0646520-0938-45b9-ae71-7c4db1a9fbec" />
+
+---
+
+> ✨ Developed in collaboration with [Jackson M. Langat](https://github.com/Langat1999) who assisted in implementation and functionality improvements.
+
+---
+
+## 🛠️ Recent Enhancements in collaboration with Jackson M. Langat
+
+| Feature                        | Description                                                                 |
+|-------------------------------|-----------------------------------------------------------------------------|
+| ✅ NavBar Active on Click     | JavaScript added to highlight clicked links                                |
+| ✅ Contact Form               | Fully styled, responsive contact form with email and message fields         |
+| ✅ CV Download Button         | Allows visitors to download my resume directly                             |
+| ✅ Favicon                    | Custom favicon added for browser tab icon                                   |
+| ✅ SEO Metadata               | Meta tags for title, description, keywords, and Open Graph added            |
+| ✅ Website URL in Metadata    | Portfolio URL added to enhance SEO and link previews                        |
+
 ---
 
 ## 🎨 Features
@@ -74,4 +97,4 @@ This project is licensed under the **MIT License**. Feel free to use and customi
 
 ---
 
-> Built with passion by Monicah Awuor 🌍
+> Built with passion by Monicah Awuor collaborating with Jackson M. Langat
