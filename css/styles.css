@@ -1,3 +1,4 @@
+/* === Base Styles === */
 body {
     margin: 0;
     padding: 0;
@@ -35,7 +36,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: end !important;
-
     width: 50%;
     margin-left: 10%;
     padding: 10px;
@@ -45,7 +45,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     color: black;
     width: 100%;
     text-decoration: none !important;
@@ -63,10 +62,9 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(to right, #fbf9fd, #f3fdfe);
-
     color: #414141;
     font-size: 15px;
-    font-weight: semi-bold;
+    font-weight: 600;
 }
 
 .about img {
@@ -83,28 +81,28 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-
     background: #f9fbfe;
 }
-
 
 .left {
     padding: 20px;
     flex: 2;
     width: 100%;
 }
+
 .right {
     padding: 20px;
     flex: 1;
 }
 
 .section-title {
-    font-size: 24px;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    padding-bottom: 0.3rem;
-    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: #d32f2f;
+    border-left: 4px solid #d32f2f;
+    padding-left: 0.5rem;
 }
+
 .skills-box {
     justify-content: space-between;
     display: flex;
@@ -112,17 +110,9 @@ body {
     align-items: center;
     margin-bottom: 2rem;
 }
-.section-title.red {
-    width: 100%;
-    height: 2px;
-    background-color: #d32f2f;
-    margin: 1rem 0;
-}
 
 .section-title.red {
-    margin-bottom: 10px;
     color: red;
-    /* border-color: red; */
 }
 
 .section-title.blue {
@@ -132,9 +122,7 @@ body {
 
 .experience {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(2, auto);
-    ;
 }
 
 .work {
@@ -144,6 +132,20 @@ body {
 .date {
     font-weight: bold;
     color: #555;
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.date::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff4500;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
 }
 
 .job-role {
@@ -182,37 +184,6 @@ body {
     padding-left: 1.2rem;
 }
 
-.date {
-    position: relative;
-}
-
-.date::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: #ccc;
-    left: 10px;
-    top: 0;
-    bottom: 0;
-}
-
-.date {
-    margin-bottom: 20px;
-    padding-left: 30px;
-    position: relative;
-}
-
-.date::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #ff4500;
-    border-radius: 50%;
-    left: 5px;
-    top: 5px;
-}
-
 .contact-section {
     display: flex;
     justify-content: center;
@@ -220,20 +191,11 @@ body {
     padding: 2rem;
 }
 
-.section-title {
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem;
-    color: #d32f2f;
-    border-left: 4px solid #d32f2f;
-    padding-left: 0.5rem;
-}
-
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
-    
 }
 
 .image-grid img {
@@ -263,38 +225,6 @@ body {
 .illustration img {
     max-width: 200px;
     height: auto;
-}
-.portfolio-section {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  margin: 2rem 0 1rem;
-  color: #d32f2f;
-  border-left: 4px solid #d32f2f;
-  padding-left: 0.5rem;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.image-grid img:hover {
-  transform: scale(1.03);
 }
 
 .contact-form {
@@ -338,17 +268,11 @@ body {
     font-size: 1.1rem;
 }
 
-
-
-
-
-
 .footer-content {
     display: flex;
     flex-direction: column;
     background-color: #fc0202;
     height: 200px;
-
 }
 
 .footer-content .socials {
@@ -362,10 +286,6 @@ body {
 }
 
 .footer-content .socials img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 30px;
     height: 30px;
 }
@@ -373,13 +293,68 @@ body {
 .footer-content h3 {
     color: #fff;
     font-size: 20px;
-    font-weight: semi-bold;
+    font-weight: 600;
     text-align: center;
-    justify-self: center;
 }
 
 .footer-content p {
     color: #fff;
     font-size: 15px;
     text-align: center;
+}
+
+/* === Responsive Styles for Small Screens === */
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .topnav {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .topnav a {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .skills-box {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer-content {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .footer-content .socials {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
