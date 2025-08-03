@@ -191,11 +191,13 @@ body {
     padding: 2rem;
 }
 
+/* === Responsive Image Grid === */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 .image-grid img {
@@ -268,6 +270,24 @@ body {
     font-size: 1.1rem;
 }
 
+/* === New Download Button (Red) === */
+.download-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #e60023; /* red */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #b3001c; /* darker red */
+}
+
+/* === Footer === */
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -303,24 +323,17 @@ body {
     text-align: center;
 }
 
-/* === Responsive Styles for Small Screens === */
-@media (max-width: 600px) {
-    .nav {
+/* === Responsive Media Queries === */
+@media (max-width: 900px) {
+    .container {
         flex-direction: column;
-        align-items: flex-start;
         padding: 1rem;
     }
 
     .topnav {
         flex-direction: column;
-        width: 100%;
         margin-left: 0;
-        padding: 0;
-    }
-
-    .topnav a {
         width: 100%;
-        padding: 10px 0;
     }
 
     .hero {
@@ -329,23 +342,13 @@ body {
         padding: 1rem;
     }
 
-    .container {
+    .contact-wrapper {
         flex-direction: column;
-        padding: 1rem;
     }
 
     .skills-box {
         flex-direction: column;
         gap: 1rem;
-    }
-
-    .image-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-wrapper {
-        flex-direction: column;
-        padding: 1rem;
     }
 
     .footer-content {
@@ -356,5 +359,27 @@ body {
     .footer-content .socials {
         flex-wrap: wrap;
         gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .topnav a {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
     }
 }
