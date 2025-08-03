@@ -84,8 +84,6 @@ To preview the site locally:
 
 ## ✨ Future Improvements
 
-- Add responsive layout using CSS Grid or Flexbox for smaller devices
-- Integrate backend for form submission (e.g. with Formspree or PHP)
 - Include project modals or lightbox previews
 - Add animations or transitions for interactivity
 
