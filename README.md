@@ -5,7 +5,7 @@ Welcome to my **PLP Portfolio Website** — a personal and professional showcase
 ---
 # Github Pages link
 - Click the link which is hosted on github pages
-[My portfolio link](https://github.com/Moniah-code/PLP_Hackathon_Portfolio.git)
+[My portfolio link](https://moniah-code.github.io/PLP_Hackathon_Portfolio/)
 
 ---
 
