@@ -33,7 +33,7 @@ To preview the site locally:
 
 | Feature                        | Description                                                                 |
 |-------------------------------|-----------------------------------------------------------------------------|
-| ✅ NavBar Active on Click     | JavaScript added to highlight clicked links                                |
+| ✅ NavBar Active on Click     |  Added to highlight clicked links                                |
 | ✅ Contact Form               | Fully styled, responsive contact form with email and message fields         |
 | ✅ CV Download Button         | Allows visitors to download my resume directly                             |
 | ✅ Favicon                    | Custom favicon added for browser tab icon                                   |
